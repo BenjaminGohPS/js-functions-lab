@@ -154,3 +154,31 @@ const calculateTip = (bill, tip) => {
 };
 
 console.log("Exercise 7 Result:", calculateTip(50, 20));
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+// formula for  °F = (9/5) * °C+32
+// formual for  °C = (°F-32) * (5/9)
+
+const convertTemperature = (temp, symbol) => {
+  const s = symbol.toUpperCase();
+  if (s === "C") {
+    return (9 / 5) * temp + 32;
+  } else if (s === "F") {
+    return ((temp - 32) * 5) / 9;
+  }
+};
+
+console.log("Exercise 8 Result:", convertTemperature(32, "C"));
