@@ -288,3 +288,23 @@ const createUsername = (name1, name2) => {
 };
 
 console.log("Exercise 11 Result:", createUsername("Samantha", "Green"));
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+function numArgs(...arguments) {
+  return arguments.length;
+}
+
+const numArgs2 = (...arguments) => {
+  return arguments.length;
+};
+
+console.log("Exercise 12 Result:", numArgs(1, 2, 3, 4));
+console.log("Exercise 12 Result:", numArgs2(1, 2, 3, 4));
