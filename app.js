@@ -53,7 +53,7 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (vowel) => {
-  v = vowel.toLowerCase();
+ const v = vowel.toLowerCase();
   if (v === "a" || v === "e" || v === "i" || v === "o" || v === "u") {
     return true;
   } else {
